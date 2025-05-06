@@ -1,16 +1,12 @@
-# fed24d-api-inl2-grupp14
+### Gruppuppgift API-utveckling med säker hantering av användare
 
-Ja, det kan vara bra att specificera att man kan köra `npm run dev` antingen i `server`-mappen eller `client`-mappen, beroende på om man vill starta frontend eller backend. Det gör det tydligt för andra att de kan starta den del av applikationen de vill arbeta med utan att behöva navigera till den andra mappen.
+## Gruppmedlemmar
 
-Här är en uppdaterad version med den informationen inkluderad:
+- Frida Nordenlöw
+- Maria Jonasson
+- Yuliia Ponomarenko
 
----
-
-# Projektets Namn
-
-Beskrivning av projektet.
-
-## Installation
+## Kom igång
 
 ### 1. Klona repo
 
