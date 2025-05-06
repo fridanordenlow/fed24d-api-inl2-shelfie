@@ -44,17 +44,14 @@ Projektet är uppdelat i två huvudmappar: `client` och `server`, samt en `docs`
 
 ```
 book-app/
-├── book-client/                   # Frontend
+├── book-client/              # Frontend
 │   ├── public/               # Publika filer som index.html
 │   ├── src/                  # Källkod för frontend
 │       ├── main.ts
 │       ├── style.css
 │   ├── package.json          # Frontend-beroenden (kommer skapas senare)
 │
-├── docs/
-│   ├── group-diary.md        # Loggbok för gruppsamarbetet
-│
-├── book-api/                   # Backend
+├── book-api/                 # Backend
 │   ├── src/                  # Backend-kod (Express, API-logik, modeller)
 │   │   ├── controllers/      # Hanterar API-logik
 │   │   ├── middlewares/      # Middleware-funktioner (t.ex. autentisering - verifyToken.ts)
@@ -65,6 +62,9 @@ book-app/
 │   └── .env                  # Miljövariabler (t.ex. DB_URL, PORT)
 │   ├── package.json          # Backend-beroenden
 │   ├── tsconfig.json         # TypeScript-konfiguration
+│
+├── docs/
+│   ├── group-diary.md        # Loggbok för gruppsamarbetet
 │
 ├── .gitignore                # Global gitignore för projektet
 ├── README.md                 # Denna fil
