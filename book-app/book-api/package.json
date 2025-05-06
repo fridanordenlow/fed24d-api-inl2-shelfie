@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "book-api",
   "version": "1.0.0",
   "description": "Backend API for project",
   "main": "index.ts",

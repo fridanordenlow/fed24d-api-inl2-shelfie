@@ -43,8 +43,8 @@ npm run dev
 Projektet är uppdelat i två huvudmappar: `client` och `server`, samt en `docs` för vår gruppdagbok.
 
 ```
-fed24d-api-inl2-grupp14/
-├── client/                   # Frontend
+book-app/
+├── book-client/                   # Frontend
 │   ├── public/               # Publika filer som index.html
 │   ├── src/                  # Källkod för frontend
 │       ├── main.ts
@@ -54,7 +54,7 @@ fed24d-api-inl2-grupp14/
 ├── docs/
 │   ├── group-diary.md        # Loggbok för gruppsamarbetet
 │
-├── server/                   # Backend
+├── book-api/                   # Backend
 │   ├── src/                  # Backend-kod (Express, API-logik, modeller)
 │   │   ├── controllers/      # Hanterar API-logik
 │   │   ├── middlewares/      # Middleware-funktioner (t.ex. autentisering - verifyToken.ts)
