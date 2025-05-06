@@ -1,4 +1,4 @@
-### Gruppuppgift API-utveckling med säker hantering av användare
+# Gruppuppgift API-utveckling med säker hantering av användare
 
 ## Gruppmedlemmar
 
