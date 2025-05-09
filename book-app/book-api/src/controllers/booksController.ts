@@ -29,12 +29,12 @@ export const createBook = async (req: Request, res: Response) => {
 
   try {
     const book = new Book({
-      title: title,
-      description: description,
-      author: author,
-      genres: genres,
-      image: image,
-      published_year: published_year
+      title,
+      description,
+      author,
+      genres,
+      image,
+      published_year
     });
     const savedPun = await book.save();
     res.status(201).json({message: 'Book created', data: savedPun})
