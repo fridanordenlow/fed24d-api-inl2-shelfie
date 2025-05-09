@@ -12,7 +12,7 @@ const UserSchema: Schema = new Schema<IUser>({
   },
   is_admin: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   created_at: {
     type: Date,
