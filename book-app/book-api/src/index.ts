@@ -11,6 +11,9 @@ const app = express();
 app.use(express.json()); // Parse JSON request
 
 
+import booksRouter from './routes/books.js'
+app.use('/books', booksRouter);
+
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI as string)
