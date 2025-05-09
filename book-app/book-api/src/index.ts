@@ -5,6 +5,8 @@ import mongoose from 'mongoose';
 import 'dotenv/config'; // A more concise way to import dotenv
 import authRouter from './routes/auth.js';
 import userRouter from './routes/users.js';
+import booksRouter from './routes/books.js'
+
 import reviewRouter from './routes/reviews.js';
 
 const app = express();
@@ -22,6 +24,7 @@ app.use(
 // Routes
 app.use('/auth', authRouter);
 app.use('/users', userRouter);
+app.use('/books', booksRouter);
 app.use('/api/reviews', reviewRouter); // Varför är api med här? Tror att det bara ska vara /reviews
 
 // Connect to MongoDB
