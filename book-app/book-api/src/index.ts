@@ -3,6 +3,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import 'dotenv/config'; // A more concise way to import dotenv
+import authRouter from './routes/auth.js';
 import userRouter from './routes/users.js';
 import reviewRouter from './routes/reviews.js';
 
@@ -19,6 +20,7 @@ app.use(
 );
 
 // Routes
+app.use('/auth', authRouter);
 app.use('/users', userRouter);
 app.use('/api/reviews', reviewRouter); // Varför är api med här? Tror att det bara ska vara /reviews
 
