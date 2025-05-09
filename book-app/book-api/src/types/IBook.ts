@@ -1,6 +1,6 @@
 import { IReview } from "../models/Review.js";
 
-export interface ITodo {
+export interface IBook {
   title: string;
   description: string;
   author: string;
