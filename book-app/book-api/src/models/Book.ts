@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
+import { IBook } from "../types/IBook.js"
 const Schema = mongoose.Schema;
 
-const BookSchema = new Schema({
+const BookSchema = new Schema<IBook>({
 	title: {
 		type: String,
 		required: true
@@ -28,7 +29,7 @@ const BookSchema = new Schema({
 	},
     reviews: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Reviews' 
+        ref: 'Review' 
       }]
 });
  
