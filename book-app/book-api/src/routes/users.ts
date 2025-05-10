@@ -5,10 +5,9 @@ import {
   fetchSingleUser,
   updateUser,
 } from '../controllers/userController.js';
+import { verifyAccessToken } from '../middlewares/verifyAccessToken.js';
 
 const router = express.Router();
-
-// Routes in index.ts: app.use('/users', userRouter);
 
 // Get all users
 router.get('/', fetchAllUsers);
@@ -17,9 +16,9 @@ router.get('/', fetchAllUsers);
 router.get('/:id', fetchSingleUser);
 
 // Update single user (token)
-router.patch('/:id', updateUser);
+router.patch('/:id', verifyAccessToken, updateUser);
 
 // Delete user (token)
-router.delete('/:id', deleteUser);
+router.delete('/:id', verifyAccessToken, deleteUser);
 
 export default router;
