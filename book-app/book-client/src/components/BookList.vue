@@ -60,6 +60,7 @@ const searchBook = () => {
 .books-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 .book-image {
     max-height: 30vh;
