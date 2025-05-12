@@ -1,20 +1,42 @@
-# Node modules
-node_modules/
-
-# Build output
-dist/
-
-# Mac-specific files
-.DS_Store
-
-# Environment variables
-.env
-
-# Lock files for package managers
-pnpm-lock.yaml
-yarn.lock
-
 # Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# node_modules
+node_modules/
+
+# macOS & editor artifacts
+.DS_Store
+
+# Build output
+dist/
+dist-ssr/
+build/
+coverage/
+
+# Local-only config
+*.local
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+# Env files
+.env
