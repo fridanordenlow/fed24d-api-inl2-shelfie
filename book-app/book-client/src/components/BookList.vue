@@ -42,7 +42,11 @@ const searchBook = () => {
                     <h3>{{ book.title }}</h3>
                     <h4>{{ book.author }}</h4>
                     <p>{{ book.published_year }}</p>
-                    <p>{{ book.genres }}</p> <!-- TODO: Redo this so array is printed out correctly -->
+                    <div class="genres">
+                        <span v-for="(genre, index) in book.genres" :key="index" class="genre">
+                            {{ genre }}
+                        </span>
+                    </div>
                 </div>
                 <div class="view-link">
                     <RouterLink :to="`/books/${book._id}`">View</RouterLink>
@@ -60,5 +64,9 @@ const searchBook = () => {
 .book-image {
     max-height: 30vh;
     width: auto;
+}
+.genres {
+    display: flex;
+    gap: 1rem;
 }
 </style>
