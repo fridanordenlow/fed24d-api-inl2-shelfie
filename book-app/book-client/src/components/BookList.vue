@@ -70,7 +70,7 @@ const searchBook = () => {
     display: flex;
     gap: 1rem;
 }
-.genres > span {
+.genre {
     background-color: black;
     color: white;
     padding: 0.25rem;
