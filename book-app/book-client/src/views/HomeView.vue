@@ -5,7 +5,6 @@ import BookList from '@/components/BookList.vue';
 
 <template>
     <h1>Home</h1>
-    <BookList />
 </template>
 
 <style lang="scss" scoped>
