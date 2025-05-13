@@ -20,6 +20,11 @@ const router = createRouter({
       path: '/add-book',
       name: 'Add new book',
       component: AddBookView,
+      /*
+      meta: {
+        requiresAuth: true
+      }
+      */
     }
   ],
 });
