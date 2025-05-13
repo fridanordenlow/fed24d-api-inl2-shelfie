@@ -26,8 +26,8 @@ Fortsätta arbete backend
 Enskilt arbete 
 
 **Frida:**
-Installera vite och vue 
-Slutföra backend delområde 1
+- Installera vite och vue
+- Slutföra backend delområde 1
 
 **Maria:**
 Fixa klienten miniatyrer av böcker på HomeView delområde 2
@@ -39,13 +39,13 @@ Slutföra backend delområde 3
 Daily 
 
 **Frida:**
-Färdig med backend
-Börja arbetet med klienten
+- Färdig med backend
+- Börja arbetet med klienten
 
 **Maria:** 
-Fixa lösenordsskyddade anrop
-Lösenordskyddade adminpaneler 
+- Fixa lösenordsskyddade anrop
+- Lösenordskyddade adminpaneler 
 
 **Yuliia:**
-Färdig med backend
-Påbörja arbetet med klienten
+- Färdig med backend
+- Påbörja arbetet med klienten
