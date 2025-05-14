@@ -5,8 +5,12 @@
   const API_URL = import.meta.env.VITE_API_URL;
   const router = useRouter()
   const form = reactive({
-    content: '',
-    done: false
+    title: '',
+    description: '',
+    author: '',
+    genres: '',
+    image: '',
+    published_year: '',
   })
   
   const submit = async () => {
