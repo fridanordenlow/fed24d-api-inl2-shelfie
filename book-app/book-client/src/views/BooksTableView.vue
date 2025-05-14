@@ -41,4 +41,17 @@ onMounted(async () => {
 </template>
 
 <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #e3fde0;
+}
+
 </style>
