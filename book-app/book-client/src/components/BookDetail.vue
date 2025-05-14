@@ -30,7 +30,7 @@ const book = ref(null)
 const reviews = ref([])
 
 const loadBook = async () => {
-  const res = await fetch(`${API_URL}books/${route.params.id}`)
+  const res = await fetch(`${API_URL}/books/${route.params.id}`)
   book.value = await res.json()
 }
 
