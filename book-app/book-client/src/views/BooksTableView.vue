@@ -21,6 +21,7 @@ onMounted(async () => {
 <template>
     <div>
         <h2>Books</h2>
+        <RouterLink to="/books">Back</RouterLink>
         <table>
             <tr>
                 <th>Title</th>
