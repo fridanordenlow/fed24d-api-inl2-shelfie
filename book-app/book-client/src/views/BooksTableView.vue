@@ -20,23 +20,27 @@ onMounted(async () => {
 
 <template>
     <div>
-        <h2>Books</h2>
+        <h2>All books</h2>
         <RouterLink to="/books">Back</RouterLink>
         <table>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th colspan="3">Genres</th>
-                <th>Published</th>
-            </tr>
-            <tr v-for="book in books" :key="book._id">
-                <td>{{ book.title }}</td>
-                <td>{{ book.author }}</td>
-                <td v-for="(genre, index) in book.genres" :key="index" class="genre">
-                    {{ genre }}
-                </td>
-                <td>{{ book.published_year }}</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th colspan="3">Genres</th>
+                    <th>Published</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="book in books" :key="book._id">
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.author }}</td>
+                    <td v-for="(genre, index) in book.genres" :key="index" class="genre">
+                        {{ genre }}
+                    </td>
+                    <td>{{ book.published_year }}</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </template>
