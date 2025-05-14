@@ -49,3 +49,23 @@ Daily
 **Yuliia:**
 - Färdig med backend
 - Påbörja arbetet med klienten
+
+## 14/5 
+Daily
+
+**Frida:**
+- Färdig med registrering av användare 
+- Jobbar på inloggning och adminpanel
+
+**Maria:** 
+- Nästan färdig med adminpanel för att lägga till ny bok
+- Jobbar på adminpanel för boklista i tabellform
+
+**Yuliia:**
+- Jobbar på boksida för specifika böcker
+- Lite strul med att hämta rätt bok med id - förhoppningvis blir detta löst av liggande PR 
+
+**Alla:**
+- Felsökning av kod
+- Code review av aktuella PRs
+
