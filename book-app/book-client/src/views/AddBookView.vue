@@ -17,7 +17,7 @@
     try {
       await fetch(API_URL + 'books', {
         method: "POST",
-        credentials: 'include', // This enables cookie handling
+        // credentials: 'include', // This enables cookie handling
         headers: {
           "Content-Type": "application/json"
         },
