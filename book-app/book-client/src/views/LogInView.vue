@@ -1,4 +1,7 @@
 <script setup>
+// To do:
+// Implement log out somewhere
+
 import { reactive, ref } from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
 
@@ -11,7 +14,6 @@ const form  = reactive({
 })
 
 const errorMessage = ref('');
-
 
 const onSubmit = async () => {
     errorMessage.value = '';
