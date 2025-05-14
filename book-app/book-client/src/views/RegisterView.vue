@@ -52,8 +52,8 @@ const onSubmit = async () => {
             <input type="text" name="password" v-model="form.password">
             <button>Register</button>
         </form> 
-        <div v-if="successMessage" class="message success">{{ successMessage }}</div>
-        <div v-if="errorMessage" class="message error">{{ errorMessage }}</div>
+        <div v-if="successMessage" class="feedback-message">{{ successMessage }}</div>
+        <div v-if="errorMessage" class="feedback-message">{{ errorMessage }}</div>
         <RouterLink to="/">Go back</RouterLink> <!-- Change to login-button? -->
     </div>
 </template>
