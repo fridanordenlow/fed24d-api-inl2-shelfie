@@ -12,7 +12,7 @@
       <span v-for="(genre, i) in book.genres" :key="i" class="genre">{{ genre }}</span>
     </div>
 
-    <ReviewForm :bookId="book._id" @review-added="loadReviews" />
+    <ReviewForm :bookId="book._id" :reviews="book.reviews" @review-added="fetchReviews" />
     <ReviewList :reviews="reviews" />
   </div>
 </template>
@@ -20,7 +20,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-//import ReviewForm from './ReviewForm.vue'
+import ReviewForm from './ReviewForm.vue'
 //import ReviewList from './ReviewList.vue'
 
 const API_URL = import.meta.env.VITE_API_URL
