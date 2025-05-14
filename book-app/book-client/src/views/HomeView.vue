@@ -8,6 +8,7 @@ import { RouterLink } from 'vue-router';
     <h1>Home</h1>
     <BookList />
     <RouterLink to="/register">Register user</RouterLink>
+    <RouterLink to="/login">Log in</RouterLink>
 </template>
 
 <style lang="scss" scoped>
