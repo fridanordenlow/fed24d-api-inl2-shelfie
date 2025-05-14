@@ -15,12 +15,11 @@ router.get('/', async (_req, res) => {
   }
 });
 
-// GET: Get a review by ID
-router.get('/:id', async (req: any, res: any) => {
+// GET: Get all reviews for a specific book
+router.get('/books/:bookId', async (req: Request, res: Response) => {
   try {
-    const review = await Review.findById(req.params.id);
-    if (!review) return res.status(404).json({ message: 'Review not found' });
-    res.json(review);
+    const reviews = await Review.find({ bookId: req.params.bookId });
+    res.json(reviews);
   } catch (err) {
     res.status(500).json({ message: (err as Error).message });
   }
@@ -28,8 +27,8 @@ router.get('/:id', async (req: any, res: any) => {
 
 // POST: Create a new review
 router.post('/', async (req, res) => {
-  const { name, content, rating } = req.body;
-  const review = new Review({ name, content, rating });
+  const { name, content, rating, bookId } = req.body;
+  const review = new Review({ name, content, rating, bookId});
 
   try {
     const savedReview = await review.save();

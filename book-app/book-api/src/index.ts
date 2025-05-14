@@ -25,7 +25,7 @@ app.use(
 app.use('/auth', authRouter);
 app.use('/users', userRouter);
 app.use('/books', booksRouter);
-app.use('/api/reviews', reviewRouter); // Varför är api med här? Tror att det bara ska vara /reviews
+app.use('/reviews', reviewRouter);
 
 // Connect to MongoDB
 mongoose
