@@ -1,11 +1,10 @@
 <script setup>
 import { RouterLink } from 'vue-router';
-import NavBar from '@/components/NavBar.vue';
+import SiteHeader from '@/components/SiteHeader.vue';
 </script>
 
 <template>
-    <h1>Home</h1>
-    <NavBar />
+    <SiteHeader title="Shelfie" />
 </template>
 
 <style scoped>

@@ -1,6 +1,7 @@
 <script setup>
 import { reactive } from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
+import SiteHeader from '@/components/SiteHeader.vue';
 
 import useAuthStore from '@/stores/useAuthStore';
 
@@ -47,8 +48,9 @@ const onSubmit = async () => {
 </script>
 
 <template>
+    <SiteHeader title="Shelfie" />
     <div>
-        <h1>Log in to your account</h1>
+        <h2>Log in to your account</h2>
         <form id="register-form" @submit.prevent="onSubmit">
             <label for="">Username:</label>
             <input type="text" name="username" v-model="form.username">

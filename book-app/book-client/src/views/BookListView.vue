@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import { RouterLink } from "vue-router";
+import SiteHeader from '@/components/SiteHeader.vue';
 
 const API_URL = import.meta.env.VITE_API_URL
 
@@ -25,6 +26,7 @@ const searchBook = () => {
 </script>
 
 <template>
+    <SiteHeader title="Shelfie" />
     <div>
         <h2>Books</h2>
         <form id="book-search" @submit.prevent="searchBook">
@@ -69,10 +71,5 @@ const searchBook = () => {
 .genres {
     display: flex;
     gap: 1rem;
-}
-.genre {
-    background-color: black;
-    color: white;
-    padding: 0.25rem;
 }
 </style>
