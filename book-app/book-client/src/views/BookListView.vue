@@ -1,10 +1,7 @@
 <script setup>
-import { onMounted, ref } from "vue";
-import { RouterLink } from "vue-router";
+import { ref } from "vue";
 import SiteHeader from '@/components/SiteHeader.vue';
 import BookMinis from "@/components/BookMinis.vue";
-
-const API_URL = import.meta.env.VITE_API_URL
 
 const searchQuery = ref('');
 
