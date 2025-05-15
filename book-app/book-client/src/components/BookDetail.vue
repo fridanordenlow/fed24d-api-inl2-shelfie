@@ -52,8 +52,6 @@ onMounted(async () => {
 
 <style scoped>
 .genre {
-  background: #222;
-  color: white;
   padding: 0.25rem;
   margin-right: 0.5rem;
 }
