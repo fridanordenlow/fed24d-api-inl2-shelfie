@@ -1,6 +1,7 @@
 <script setup>
   import { reactive } from 'vue';
   import { useRouter } from 'vue-router';
+  import SiteHeader from '@/components/SiteHeader.vue';
 
   const API_URL = import.meta.env.VITE_API_URL;
   const router = useRouter()
@@ -33,8 +34,9 @@
 </script>
 
 <template>
-  <div class="container">
-    <h1>Add new book</h1>
+  <SiteHeader title="Shelfie" />
+  <div class="wrapper">
+    <h2>Add new book</h2>
 
     <form id="book-form" class="book-form" @submit.prevent="submit">
       <label>

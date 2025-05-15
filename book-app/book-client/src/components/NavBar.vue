@@ -21,9 +21,19 @@ const handleLogout = async () => {
 
 <template>
   <div>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/books">Books</RouterLink>
     <RouterLink to="/register">Register user</RouterLink>
     <RouterLink v-if="!isAuthenticated" to="/login">Log in</RouterLink>
     <RouterLink to="/admin-users-panel">Admin users</RouterLink>
     <button v-if="isAuthenticated" @click="handleLogout">Log out</button>
   </div>
 </template>
+
+<style scoped>
+div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+</style> 

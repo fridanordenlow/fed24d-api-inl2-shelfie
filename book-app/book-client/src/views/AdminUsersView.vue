@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import { ref, onMounted } from 'vue';
+import SiteHeader from '@/components/SiteHeader.vue';
 
 const API_URL = import.meta.env.VITE_API_URL
 const users = ref([])
@@ -25,8 +26,9 @@ onMounted(() => {
 </script>
 
 <template>
-    <div>
-        <h1>Admin: Users</h1>
+    <SiteHeader title="Shelfie" />
+    <div class="wrapper">
+        <h2>Admin: Users</h2>
         <table v-if="users.length">
           <thead>
             <tr>

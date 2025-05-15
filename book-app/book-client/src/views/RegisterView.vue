@@ -1,6 +1,7 @@
 <script setup>
 import { reactive } from 'vue';
 import useAuthStore from '@/stores/useAuthStore';
+import SiteHeader from '@/components/SiteHeader.vue';
 
 const authStore = useAuthStore();
 
@@ -19,8 +20,9 @@ const onSubmit = async () => {
 </script>
 
 <template>
-    <div>
-        <h1>Register account</h1>
+    <SiteHeader title="Shelfie" />
+    <div class="wrapper">
+        <h2>Register account</h2>
         <form id="register-form" @submit.prevent="onSubmit">
             <label for="">Username:</label>
             <input type="text" name="username" v-model="form.username">

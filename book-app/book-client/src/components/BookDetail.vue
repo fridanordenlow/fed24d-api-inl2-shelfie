@@ -1,5 +1,5 @@
 <template>
-  <div v-if="book">
+  <div v-if="book" class="wrapper">
      <!-- Link to navigate back to the previous page -->
     <RouterLink to="/">← Tillbaka</RouterLink>
    <!-- Book details -->
@@ -52,8 +52,6 @@ onMounted(async () => {
 
 <style scoped>
 .genre {
-  background: #222;
-  color: white;
   padding: 0.25rem;
   margin-right: 0.5rem;
 }
