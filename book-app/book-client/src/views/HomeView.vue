@@ -1,6 +1,13 @@
 <script setup>
 import SiteHeader from '@/components/SiteHeader.vue';
 import BookMinis from '@/components/BookMinis.vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const registerButton = () => {
+  router.push('/register'); 
+};
 </script>
 
 <template>
@@ -9,7 +16,7 @@ import BookMinis from '@/components/BookMinis.vue';
         <h2>Where every book finds its place</h2>
         <div class="indent">
             <p>Discover your next page-turner, track your novel adventures, and connect with fellow bookworms. Whether you're into fictional worlds or real-life stories, Shelfie is the place to shelf your thoughts and bookmark your journey through the world of books.</p>
-            <button class="register">
+            <button class="register" @click="registerButton">
                 Register
             </button>
         </div>
@@ -36,5 +43,11 @@ import BookMinis from '@/components/BookMinis.vue';
     padding: 1rem 3rem;
     max-width: 40vw;
     font-size: 1.5rem;
+}
+
+.register:hover {
+    outline: 4px solid #664F35;
+    background-color: #FFF7ED;
+    color: #664F35;
 }
 </style>
