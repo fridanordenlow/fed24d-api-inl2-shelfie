@@ -38,7 +38,8 @@ router.post('/', async (req, res) => {
   }
 });
 
-// PATCH update review — with token
+//PATCH update review — with token
+
 router.patch('/:id', authenticateToken, async (req: any, res: any) => {  // Middleware added to verify the token
   try {
     const review = await Review.findById(req.params.id);

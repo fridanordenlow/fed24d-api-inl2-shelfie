@@ -1,6 +1,6 @@
 import mongoose, { Document, Schema, Types } from 'mongoose';
 
- interface IReview extends Document {
+ export interface IReview extends Document {
   bookId: Types.ObjectId;
   name: string;
   content: string;
