@@ -7,9 +7,11 @@ import BookMinis from '@/components/BookMinis.vue';
     <SiteHeader title="Shelfie" />
     <div class="wrapper">
         <h2>Where every book finds its place</h2>
-        <p>Discover your next page-turner, track your novel adventures, and connect with fellow bookworms. Whether you're into fictional worlds or real-life stories, Shelfie is the place to shelf your thoughts and bookmark your journey through the world of books.</p>
-        <div class="register">
-            <h3>Register</h3>
+        <div class="indent">
+            <p>Discover your next page-turner, track your novel adventures, and connect with fellow bookworms. Whether you're into fictional worlds or real-life stories, Shelfie is the place to shelf your thoughts and bookmark your journey through the world of books.</p>
+            <button class="register">
+                Register
+            </button>
         </div>
         <h2>Chapter One: Your Next Read</h2>
         <BookMinis />
@@ -17,4 +19,22 @@ import BookMinis from '@/components/BookMinis.vue';
 </template>
 
 <style scoped>
+.indent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.indent > p {
+    max-width: 70%;
+}
+.register {
+    border: none;
+    background-color: #664F35;
+    color: #FFF7ED;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    max-width: 40vw;
+    font-size: 1.5rem;
+}
 </style>
