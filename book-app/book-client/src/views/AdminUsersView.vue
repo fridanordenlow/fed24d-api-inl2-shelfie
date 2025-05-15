@@ -27,7 +27,7 @@ onMounted(() => {
 
 <template>
     <SiteHeader title="Shelfie" />
-    <div>
+    <div class="wrapper">
         <h2>Admin: Users</h2>
         <table v-if="users.length">
           <thead>

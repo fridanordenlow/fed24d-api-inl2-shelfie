@@ -1,5 +1,5 @@
 <template>
-  <div v-if="book">
+  <div v-if="book" class="wrapper">
      <!-- Link to navigate back to the previous page -->
     <RouterLink to="/">← Tillbaka</RouterLink>
    <!-- Book details -->

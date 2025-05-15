@@ -35,7 +35,7 @@
 
 <template>
   <SiteHeader title="Shelfie" />
-  <div class="container">
+  <div class="wrapper">
     <h2>Add new book</h2>
 
     <form id="book-form" class="book-form" @submit.prevent="submit">

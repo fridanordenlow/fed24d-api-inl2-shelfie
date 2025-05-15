@@ -21,7 +21,7 @@ const onSubmit = async () => {
 
 <template>
     <SiteHeader title="Shelfie" />
-    <div>
+    <div class="wrapper">
         <h2>Register account</h2>
         <form id="register-form" @submit.prevent="onSubmit">
             <label for="">Username:</label>
