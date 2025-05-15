@@ -27,7 +27,7 @@ const searchBook = () => {
 
 <template>
     <SiteHeader title="Shelfie" />
-    <div>
+    <div class="wrapper">
         <h2>Books</h2>
         <form id="book-search" @submit.prevent="searchBook">
             <input type="text" placeholder="Search" v-model="searchQuery" />
@@ -60,9 +60,25 @@ const searchBook = () => {
 
 <style scoped>
 .books-list {
+    margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+}
+@media (min-width: 460px) {
+  .books-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 760px) {
+  .books-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .books-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .book-image {
     max-height: 30vh;

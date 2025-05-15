@@ -4,6 +4,7 @@ body {
   color: #664F35;
   background-color: #664F35;
   font-family: "Cormorant", "Times New Roman", serif;
+  margin: 0;
 }
 
 #app {
@@ -46,6 +47,11 @@ a {
   padding: 3px;
 }
 
+.wrapper {
+  width: 80vw;
+  margin: auto;
+}
+
 .genre {
   background-color: #664F35;
   color: white;
@@ -60,14 +66,5 @@ a {
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }
