@@ -46,6 +46,12 @@ a {
   padding: 3px;
 }
 
+.genre {
+  background-color: #664F35;
+  color: white;
+  padding: 0.25rem;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: #664F35;
