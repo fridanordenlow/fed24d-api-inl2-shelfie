@@ -7,9 +7,10 @@ import BookDetail from "@/components/BookDetail.vue";
 import BookListView from '@/views/BookListView.vue'
 import AddBookView from '@/views/AddBookView.vue'
 import BooksTableView from '@/views/BooksTableView.vue';
+import AdminUsersView from "@/views/AdminUsersView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL), 
   routes: [
     {
       path: "/",
@@ -52,7 +53,26 @@ const router = createRouter({
         requiresAuth: true
       }
     }
+      */
+    },
+    {
+        path: '/admin-users-panel',
+        name: 'Administrate users',
+        component: AdminUsersView,
+        // meta: {
+        //   requiresAuth: true
+        // }
+      }
   ],
 });
+
+// router.beforeEach((to, from, next) => {
+// console.log(to.meta.requiresAuth)
+// if (to.meta.requiresAuth) {
+//     next('/admin-users-panel')
+// } else {
+//     next();
+// }
+// }) 
 
 export default router;
