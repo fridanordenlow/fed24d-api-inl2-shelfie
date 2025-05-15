@@ -7,7 +7,8 @@ import LogInView from '@/views/LogInView.vue';
 import BookDetail from '@/components/BookDetail.vue';
 import BookListView from '@/views/BookListView.vue'
 import AddBookView from '@/views/AddBookView.vue'
-import AdminUsersView from '@/views/AdminUsersView.vue';
+import BooksTableView from '@/views/BooksTableView.vue';
+import AdminUsersView from "@/views/AdminUsersView.vue";
 import useAuthStore from '@/stores/useAuthStore';
 
 const router = createRouter({
@@ -42,11 +43,17 @@ const router = createRouter({
       path: '/add-book',
       name: 'Add new book',
       component: AddBookView,
-      /*
       meta: {
         requiresAuth: true
       }
-      */
+    },
+    {
+      path: '/book-table',
+      name: 'All books',
+      component: BooksTableView,
+      meta: {
+        requiresAuth: true
+      }
     },
     {
         path: '/admin-users-panel',
