@@ -84,6 +84,12 @@ const searchBook = () => {
     max-height: 30vh;
     width: auto;
 }
+h3 {
+    margin: 0;
+}
+h4 {
+    margin: 0;
+}
 .genres {
     display: flex;
     gap: 1rem;
