@@ -1,44 +1,20 @@
 <script setup>
-import { reactive, ref } from 'vue';
-import { RouterLink } from 'vue-router';
+import { reactive } from 'vue';
+import useAuthStore from '@/stores/useAuthStore';
 
-const API_URL = import.meta.env.VITE_API_URL;
+const authStore = useAuthStore();
 
-const form  = reactive({
-    username: '',
-    password: '',
-})
-
-const successMessage = ref('');
-const errorMessage = ref('');
-
+const form = reactive({
+  username: '',
+  password: '',
+});
 
 const onSubmit = async () => {
-    successMessage.value = '';
-    errorMessage.value = '';
-
-    try {
-        const response = await fetch(API_URL + '/auth/register', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(form)
-        })
-
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.message || 'Registration failed');
-        }
-
-        successMessage.value = 'Registration successful, thank you for joining us! You can now log in to your new account.';
-        form.username = '';
-        form.password = '';
-
-    } catch(error) {
-        console.log(error);
-        errorMessage.value = error.message || 'Sorry, something went wrong at registration.';
-    }
+  await authStore.register(form);
+  if (!authStore.errorMessage) {
+    form.username = '';
+    form.password = '';
+  }
 };
 </script>
 
@@ -52,9 +28,10 @@ const onSubmit = async () => {
             <input type="text" name="password" v-model="form.password">
             <button>Register</button>
         </form> 
-        <div v-if="successMessage" class="feedback-message">{{ successMessage }}</div>
-        <div v-if="errorMessage" class="feedback-message">{{ errorMessage }}</div>
-        <RouterLink to="/">Go back</RouterLink> <!-- Change to login-button? -->
+        <div v-if="authStore.successMessage" class="feedback-message">{{ authStore.successMessage }}</div>
+        <div v-if="authStore.errorMessage" class="feedback-message">{{ authStore.errorMessage }}</div>
+        <RouterLink to="/">Home Page</RouterLink> <!-- Change to login-button? -->
+        <RouterLink to="/login">Log in</RouterLink> 
     </div>
 </template>
 

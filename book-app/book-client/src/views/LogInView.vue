@@ -1,43 +1,48 @@
 <script setup>
-// To do:
-// Implement log out somewhere
-
-import { reactive, ref } from 'vue';
+import { reactive } from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
 
-const API_URL = import.meta.env.VITE_API_URL;
+import useAuthStore from '@/stores/useAuthStore';
+
+const authStore = useAuthStore();
 const router = useRouter();
 
 const form  = reactive({
     username: '',
     password: '',
-})
-
-const errorMessage = ref('');
+});
 
 const onSubmit = async () => {
-    errorMessage.value = '';
+    await authStore.login(form)
 
-    try {
-        const response = await fetch(API_URL + '/auth/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(form)
-        })
+    if (authStore.isAuthenticated) {
+        console.log('You are logged in', form.username)
+        router.push('/') 
+    };
 
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.message || 'Login failed');
-        }
-        console.log('You are logged in.')
-        router.push('/') // Or redirect to /books?
+    // errorMessage.value = '';
 
-    } catch(error) {
-        console.log(error);
-        errorMessage.value = error.message || 'Sorry, something went wrong at login. Please try again.';
-    }
+    // try {
+    //     const response = await fetch(API_URL + '/auth/login', {
+    //         method: 'POST',
+    //         credentials: 'include',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify(form)
+    //     })
+
+    //     if (!response.ok) {
+    //         const errorData = await response.json();
+    //         throw new Error(errorData.message || 'Login failed');
+    //     }
+    //     console.log('You are logged in.')
+    //     router.push('/') // Or redirect to /books?
+
+    // } catch(error) {
+    //     console.log(error);
+    //     errorMessage.value = error.message || 'Sorry, something went wrong at login. Please try again.';
+    // }
 };
 </script>
 
@@ -51,10 +56,10 @@ const onSubmit = async () => {
             <input type="text" name="password" v-model="form.password">
             <button>Log in</button>
         </form> 
-        <div v-if="errorMessage" class="feedback-message">{{ errorMessage }}</div>
-        <RouterLink to="/">Go back</RouterLink> <!-- Change to login-button? -->
+        <div v-if="authStore.errorMessage" class="feedback-message">{{ authStore.errorMessage }}</div>
+        <RouterLink to="/">Home Page</RouterLink>
     </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 </style>

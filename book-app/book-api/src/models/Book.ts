@@ -29,7 +29,7 @@ const BookSchema = new Schema<IBook>({
 	},
     reviews: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Reviews' 
+        ref: 'Review' 
       }]
 });
  
