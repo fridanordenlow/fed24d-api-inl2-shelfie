@@ -11,7 +11,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   font-weight: normal;
-  background-color: #FFF7ED;
+  background-color: #664F35;
 }
 
 h1 {
@@ -47,14 +47,18 @@ a {
   padding: 3px;
 }
 
+/* ---- This class is used to center the main element on page and add white background color ---- */
 .wrapper {
-  width: 80vw;
+  width: 90vw;
   margin: auto;
+  background-color: #FFF7ED;
+  padding: 1rem;
 }
 
+/* ---- This class is used to style genre tags ---- */
 .genre {
   background-color: #664F35;
-  color: white;
+  color: #FFF7ED;
   padding: 0.25rem;
 }
 
