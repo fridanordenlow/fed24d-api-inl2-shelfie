@@ -1,5 +1,6 @@
 <script setup>
 import SiteHeader from '@/components/SiteHeader.vue';
+import BookMinis from '@/components/BookMinis.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import SiteHeader from '@/components/SiteHeader.vue';
             <h3>Register</h3>
         </div>
         <h2>Chapter One: Your Next Read</h2>
+        <BookMinis />
     </div>
 </template>
 
