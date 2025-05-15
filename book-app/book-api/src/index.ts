@@ -3,9 +3,10 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import 'dotenv/config'; // A more concise way to import dotenv
+
 import authRouter from './routes/auth.js';
 import userRouter from './routes/users.js';
-import booksRouter from './routes/books.js'
+import booksRouter from './routes/books.js';
 
 import reviewRouter from './routes/reviews.js';
 
@@ -16,7 +17,7 @@ app.use(express.json()); // Parse JSON request
 app.use(cookieParser()); // Parse Cookies
 app.use(
   cors({
-    origin: '*', // This makes the Express server accept requests from all other domains
+    origin: 'http://localhost:5173', // With '*' fetch reguests for login breaks
     credentials: true, // Allows cookies sent to this API
   })
 );
