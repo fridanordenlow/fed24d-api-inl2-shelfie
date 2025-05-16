@@ -32,4 +32,8 @@ import { RouterLink } from "vue-router";
     border-radius: 0.5rem;
     width: 60vw;
 }
+
+.panel > a:hover {
+  background-color: #5c6bc0;  
+}
 </style>
