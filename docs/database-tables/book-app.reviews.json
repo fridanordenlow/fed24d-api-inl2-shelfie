@@ -1,0 +1,177 @@
+[{
+  "_id": {
+    "$oid": "681d0af8429a3c28aa1e82cb"
+  },
+  "name": "Anna",
+  "content": "Very good bok",
+  "rating": 5,
+  "created_at": {
+    "$date": "2025-05-08T19:50:16.860Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824e497f8d022952c331f04"
+  },
+  "bookId": {
+    "$oid": "681de8c159a5f617d5563b51"
+  },
+  "name": "Anna",
+  "content": "“Pride & Prejudice” is a timeless masterpiece that blends wit, romance, and social commentary with elegance and charm. ",
+  "rating": 5,
+  "created_at": {
+    "$date": "2025-05-14T18:44:39.365Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824e5d0f8d022952c331f0b"
+  },
+  "bookId": {
+    "$oid": "681dd43567572365e06e5333"
+  },
+  "name": "David",
+  "content": "The Bell Jar is a powerful and deeply moving novel. Sylvia Plath's writing is raw, honest, and incredibly poetic. I felt truly connected to Esther’s inner struggles and admired the way Plath portrayed mental illness with such clarity and intensity. It's a haunting read that stays with you long after the final page.",
+  "rating": 5,
+  "created_at": {
+    "$date": "2025-05-14T18:49:52.980Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824e6b6f8d022952c331f10"
+  },
+  "bookId": {
+    "$oid": "681dd43567572365e06e5334"
+  },
+  "name": "Thomas E.",
+  "content": "Orlando is a fascinating and imaginative novel that plays with time, gender, and identity in a truly unique way. Virginia Woolf’s writing is witty and poetic, though at times a bit dense. I really enjoyed the creativity and the bold themes, even if some parts felt slower than others. Overall, a memorable and thought-provoking read.",
+  "rating": 4,
+  "created_at": {
+    "$date": "2025-05-14T18:53:42.012Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824e7bff8d022952c331f14"
+  },
+  "bookId": {
+    "$oid": "68220fc867572365e06e5335"
+  },
+  "name": "Amanda K.",
+  "content": "1984 is a chilling and important novel with a powerful message about totalitarianism and surveillance. I appreciated the ideas and the historical impact, but I found the pacing slow and some parts hard to stay engaged with. While the concept is brilliant, the execution didn't fully connect with me. Still, worth reading for its influence and thought-provoking themes.",
+  "rating": 3,
+  "created_at": {
+    "$date": "2025-05-14T18:58:07.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824e844f8d022952c331f16"
+  },
+  "bookId": {
+    "$oid": "68220fc867572365e06e5335"
+  },
+  "name": "Leo",
+  "content": "1984 is a gripping and unsettling read. Orwell’s vision of a dystopian future feels disturbingly relevant even today. The atmosphere he creates is intense, and the ideas about control, truth, and freedom really made me think. Some parts were a bit heavy, but overall it’s a powerful novel that leaves a lasting impression.",
+  "rating": 4,
+  "created_at": {
+    "$date": "2025-05-14T19:00:20.004Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824e8eef8d022952c331f1a"
+  },
+  "bookId": {
+    "$oid": "681de8c159a5f617d5563b51"
+  },
+  "name": "Teresa",
+  "content": "Pride and Prejudice is an absolute classic that never gets old. Jane Austen’s wit, sharp social commentary, and unforgettable characters make this novel a joy to read. Elizabeth Bennet is such a strong, clever heroine, and the slow-burn romance with Mr. Darcy is perfectly written. I loved every page—timeless, charming, and full of heart.",
+  "rating": 5,
+  "created_at": {
+    "$date": "2025-05-14T19:03:10.239Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824f20eec960e63d16fbb65"
+  },
+  "bookId": {
+    "$oid": "681dd43567572365e06e5333"
+  },
+  "name": "John",
+  "content": "The Bell Jar is an incredibly powerful and haunting novel that deeply explores the complexities of mental illness, identity, and societal expectations. Sylvia Plath's writing is beautifully poetic yet raw, and Esther Greenwood's journey through despair and self-discovery is both heartbreaking and thought-provoking. This book stays with you long after you've finished reading, making it a must-read for anyone interested in understanding the human experience in its most vulnerable form.",
+  "rating": 4,
+  "created_at": {
+    "$date": "2025-05-14T19:42:06.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824f379ec960e63d16fbb68"
+  },
+  "bookId": {
+    "$oid": "681dd43567572365e06e5333"
+  },
+  "name": "Felicia",
+  "content": "The Bell Jar is an interesting and thought-provoking read, offering a raw glimpse into the struggles of mental illness. Sylvia Plath’s writing is poetic and deeply emotional, but I found some parts of the story a bit slow and hard to connect with. While I appreciated the themes of identity and personal struggle, the pacing and the heavy tone made it a challenging read at times. Still, it’s a book worth reading for its cultural and literary significance.",
+  "rating": 3,
+  "created_at": {
+    "$date": "2025-05-14T19:48:09.216Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68265b7929b6bda582e78876"
+  },
+  "bookId": {
+    "$oid": "6825fa764a3bf28623494499"
+  },
+  "name": "Megan",
+  "content": "Through the character of Dorian, Wilde presents a man who sacrifices his soul to preserve his outward beauty, while his portrait bears the marks of his inner decay. The novel critiques a society obsessed with appearance and indulgence, showing how the pursuit of pleasure without accountability leads to self-destruction.",
+  "rating": 4,
+  "created_at": {
+    "$date": "2025-05-15T21:24:09.585Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826ea55e8e313e511365807"
+  },
+  "bookId": {
+    "$oid": "681dd43567572365e06e5333"
+  },
+  "name": "Anna",
+  "content": "The best book I've read!",
+  "rating": 1,
+  "created_at": {
+    "$date": "2025-05-16T07:33:41.770Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f5eb307aeeeb0b172048"
+  },
+  "bookId": {
+    "$oid": "681dd43567572365e06e5333"
+  },
+  "name": "Frida",
+  "content": "Toppenbok!",
+  "rating": 4,
+  "created_at": {
+    "$date": "2025-05-16T08:23:07.495Z"
+  },
+  "__v": 0
+}]
