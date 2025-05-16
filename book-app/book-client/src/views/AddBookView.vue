@@ -31,7 +31,7 @@
         body: JSON.stringify(form)
       })
       
-      router.push('/books')
+      router.push('/book-table')
     } catch(error) {
       console.log(error)
     }
