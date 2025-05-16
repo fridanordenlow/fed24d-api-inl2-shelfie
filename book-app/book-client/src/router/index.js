@@ -11,6 +11,7 @@ import AddBookView from '@/views/AddBookView.vue'
 import BooksTableView from '@/views/BooksTableView.vue';
 import AdminUsersView from "@/views/AdminUsersView.vue";
 import useAuthStore from '@/stores/useAuthStore';
+import AdminView from '@/views/AdminView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL), 
@@ -57,13 +58,21 @@ const router = createRouter({
       }
     },
     {
-        path: '/admin-users-panel',
-        name: 'Administrate users',
-        component: AdminUsersView,
-        meta: {
-          requiresAuth: true
-        }
+      path: '/admin-users-panel',
+      name: 'Administrate users',
+      component: AdminUsersView,
+      meta: {
+        requiresAuth: true
       }
+    },
+    {
+      path: '/admin-view',
+      name: 'Admin',
+      component: AdminView,
+      meta: {
+        requiresAuth: true
+      }
+    }
   ],
 });
 
