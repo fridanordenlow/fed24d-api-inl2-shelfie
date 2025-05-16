@@ -1,4 +1,5 @@
 <script setup>
+import SiteHeader from "@/components/SiteHeader.vue";
 import { onMounted, ref } from "vue";
 import { RouterLink } from "vue-router";
 
@@ -19,7 +20,8 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div>
+    <SiteHeader title="Shelfie" />
+    <div class="wrapper">
         <h2>All books</h2>
         <RouterLink to="/books">Back</RouterLink>
         <table>
@@ -35,7 +37,7 @@ onMounted(async () => {
                 <tr v-for="book in books" :key="book._id">
                     <td>{{ book.title }}</td>
                     <td>{{ book.author }}</td>
-                    <td v-for="(genre, index) in book.genres" :key="index" class="genre">
+                    <td v-for="(genre, index) in book.genres" :key="index">
                         {{ genre }}
                     </td>
                     <td>{{ book.published_year }}</td>

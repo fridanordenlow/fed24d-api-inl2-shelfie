@@ -26,6 +26,8 @@ const handleLogout = async () => {
     <RouterLink to="/register">Register user</RouterLink>
     <RouterLink v-if="!isAuthenticated" to="/login">Log in</RouterLink>
     <RouterLink to="/admin-users-panel">Admin users</RouterLink>
+    <RouterLink to="/book-table">Admin books</RouterLink>
+    <RouterLink to="/add-book">Add new book</RouterLink>
     <button v-if="isAuthenticated" @click="handleLogout">Log out</button>
   </div>
 </template>
