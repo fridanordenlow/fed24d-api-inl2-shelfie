@@ -9,13 +9,19 @@
     title: '',
     description: '',
     author: '',
-    genres: '',
+    genres: [],
     image: '',
     published_year: '',
   })
   
   const submit = async () => {
     try {
+      // Split the genres input by commas
+      form.genres = form.genres
+        .split(',')
+        .map(genre => genre.trim())
+        .filter(genre => genre.length > 0); // Remove any empty values
+
       await fetch(API_URL + '/books', {
         method: "POST",
         credentials: 'include', // This enables cookie handling
@@ -53,7 +59,7 @@
             <input type="text" name="title" v-model="form.author"> 
       </label>
       <label>
-            <span>Genres:</span> 
+            <span>Genres (separate by commas):</span> 
             <input type="text" name="title" v-model="form.genres"> 
       </label>
       <label>
