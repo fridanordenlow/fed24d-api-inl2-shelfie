@@ -28,7 +28,7 @@ onMounted(() => {
 <template>
     <SiteHeader title="Shelfie" />
     <div class="wrapper">
-        <h2>Admin: Users</h2>
+        <h2>All users</h2>
         <table v-if="users.length">
           <thead>
             <tr>
@@ -49,7 +49,7 @@ onMounted(() => {
         </table>
     
         <p v-else>Loading users...</p>
-        <RouterLink to="/">Home Page</RouterLink>
+        <!-- <RouterLink to="/">Home Page</RouterLink> -->
     </div>
 </template>
 

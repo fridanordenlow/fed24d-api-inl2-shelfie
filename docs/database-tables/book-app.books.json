@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "681dd43567572365e06e5333"
+  },
+  "title": "The Bell Jar",
+  "description": "The Bell Jar chronicles the crack-up of Esther Greenwood: brilliant, beautiful, enormously talented, and successful, but slowly going under -- maybe for the last time. Sylvia Plath masterfully draws the reader into Esther's breakdown with such intensity that Esther's insanity becomes completely real and even rational, as probable and accessible an experience as going to the movies. Such deep penetration into the dark and harrowing corners of the psyche is an extraordinary accomplishment and has made The Bell Jar a haunting American classic.",
+  "genres": [
+    "Classics",
+    "Fiction",
+    "Feminism"
+  ],
+  "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1668645154i/56616095.jpg",
+  "published_year": 1963,
+  "reviews": [
+    {
+      "$oid": "681d0af8429a3c28aa1e82cb"
+    }
+  ],
+  "author": "Sylvia Plath"
+},
+{
+  "_id": {
+    "$oid": "681dd43567572365e06e5334"
+  },
+  "title": "Orlando",
+  "description": "Virginia Woolf's Orlando 'The longest and most charming love letter in literature', playfully constructs the figure of Orlando as the fictional embodiment of Woolf's close friend and lover, Vita Sackville-West. Spanning three centuries, the novel opens as Orlando, a young nobleman in Elizabeth's England, awaits a visit from the Queen and traces his experience with first love as England under James I lies locked in the embrace of the Great Frost. At the midpoint of the novel, Orlando, now an ambassador in Constantinople, awakes to find that he is now a woman, and the novel indulges in farce and irony to consider the roles of women in the 18th and 19th centuries. As the novel ends in 1928, a year consonant with full suffrage for women. Orlando, now a wife and mother, stands poised at the brink of a future that holds new hope and promise for women.",
+  "genres": [
+    "Classics",
+    "Fiction",
+    "Queer"
+  ],
+  "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1443118010i/18839.jpg",
+  "published_year": 1928,
+  "reviews": [
+    {
+      "$oid": "681d08fc76193b537e47f53f"
+    }
+  ],
+  "author": "Virginia Woolf"
+},
+{
+  "_id": {
+    "$oid": "681de8c159a5f617d5563b51"
+  },
+  "title": "Pride & Prejudice",
+  "description": "Pride and Prejudice has charmed generations of readers for more than two centuries. Jane Austen's much-adapted novel is famed for its witty, spirited heroine, sensational romances, and deft remarks on the triumphs and pitfalls of social convention. Author Jane Austen (1775-1817) was an English novelist whose works of social realism achieved unprecedented critical and popular success, though Austen herself remained an anonymous writer throughout her life.",
+  "author": "Jane Austen",
+  "genres": [
+    "Classics",
+    "Romance",
+    "Fiction"
+  ],
+  "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1681804503i/129915654.jpg",
+  "published_year": 1813,
+  "reviews": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68220fc867572365e06e5335"
+  },
+  "title": "1984",
+  "description": "A masterpiece of rebellion and imprisonment where war is peace freedom is slavery and Big Brother is watching. Thought Police, Big Brother, Orwellian - these words have entered our vocabulary because of George Orwell's classic dystopian novel 1984. The story of one man's Nightmare Odyssey as he pursues a forbidden love affair through a world ruled by warring states and a power structure that controls not only information but also individual thought and memory 1984 is a prophetic haunting tale More relevant than ever before 1984 exposes the worst crimes imaginable the destruction of truth freedom and individuality. With a foreword by Thomas Pynchon. This beautiful paperback edition features deckled edges and french flaps a perfect gift for any occasion",
+  "author": "George Orwell",
+  "genres": [
+    "Classics",
+    "Fiction",
+    "Science Fiction"
+  ],
+  "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg",
+  "published_year": 1949,
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "6825fa764a3bf28623494499"
+  },
+  "title": "The Picture of Dorian Gray",
+  "description": "'The horror, whatever it was, had not yet entirely spoiled that marvellous beauty'  Enthralled by his own exquisite portrait, Dorian Gray exchanges his soul for eternal youth and beauty. Influenced by his friend Lord Henry Wotton, he is drawn into a corrupt double life, indulging his desires in secret while remaining a gentleman in the eyes of polite society. Only his portrait bears the traces of his decadence. The Picture of Dorian Gray was a succès de scandale. Early readers were shocked by its hints at unspeakable sins, and the book was later used as evidence against Wilde at the Old Bailey in 1895.  This definitive edition includes a selection of contemporary reviews condemning the novel's immorality, and the introduction to the first Penguin Classics edition by Peter Ackroyd.",
+  "author": "Oscar Wilde",
+  "genres": [
+    "Classics",
+    "Fiction",
+    "Horror"
+  ],
+  "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1454087681i/489732.jpg",
+  "published_year": 1890,
+  "reviews": [],
+  "__v": 0
+}]

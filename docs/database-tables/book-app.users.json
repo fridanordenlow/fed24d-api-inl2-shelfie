@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "6821bd62f96aab13aaad9093"
+  },
+  "username": "fridanordenlow",
+  "password": "$2b$10$BiGJ1LKW52cq35KZG75/8e6KJATaYTis5eJHtldajgEkPFnJxfXkO",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-12T09:20:34.255Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821bd7df96aab13aaad9095"
+  },
+  "username": "mariajonasson",
+  "password": "$2b$10$KGhgpHvsHzLLb1KRATco6.s3Lm9wNeWxv91xljhtCmyQMhTUZoD7m",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-12T09:21:01.605Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821bd8ef96aab13aaad9097"
+  },
+  "username": "yuliiaponomarenko",
+  "password": "$2b$10$Dd4qpSKvAkfvEsEgQIo2iOjWGa1P7W.2VtUclzKsm5I7UFoknsBoS",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-12T09:21:18.639Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68245026e00708fd96978adf"
+  },
+  "username": "Bamse",
+  "password": "$2b$10$8wMLpFw2BUnyl5mwaZ3T.uTaXvMp.74So06AIuKHVM6OdTQOYQ94K",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-14T08:11:18.957Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68245259e00708fd96978ae1"
+  },
+  "username": "Lilleskutt",
+  "password": "$2b$10$q2nmOXHRTG0/LmtPv0sd/.qQ8JfMDGPiQFJLMisacpRGOENZgVGve",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-14T08:20:41.492Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682484278e93fc02d5a0aeb5"
+  },
+  "username": "Minihopp",
+  "password": "$2b$10$mxqRFF6W9nhxdNeWihT/VuHMp72.9YWnZro/o.hPLkbQNZj7xXxFC",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-14T11:53:11.064Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825b5139618f2088953dde6"
+  },
+  "username": "Brummelisa",
+  "password": "$2b$10$oR.fG.w2ib1EaimJYzELmO5JwcAh.AjsUA2a3RtD1rwbK2QCM3pke",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-15T09:34:11.270Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825bbeb8b399861cccc4f9f"
+  },
+  "username": "Skalman",
+  "password": "$2b$10$cX46gvvEEqkYuGcH9.0FlOLwfUULDW5BC5VgXGg8t6xEf3ZWkVdB.",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-15T10:03:23.750Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f5a1307aeeeb0b17203e"
+  },
+  "username": "Vargen",
+  "password": "$2b$10$5UmTto7PPaaaKUyugoZ9Wue0TFdiL3cZtToKXftst74dAuiknJeXO",
+  "is_admin": false,
+  "created_at": {
+    "$date": "2025-05-16T08:21:53.752Z"
+  },
+  "__v": 0
+}]

@@ -24,11 +24,13 @@ const handleLogout = async () => {
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/books">Books</RouterLink>
     <RouterLink to="/register">Register user</RouterLink>
-    <RouterLink v-if="!isAuthenticated" to="/login">Log in</RouterLink>
     <RouterLink to="/admin-users-panel">Admin users</RouterLink>
     <RouterLink to="/book-table">Admin books</RouterLink>
     <RouterLink to="/add-book">Add new book</RouterLink>
-    <button v-if="isAuthenticated" @click="handleLogout">Log out</button>
+    <RouterLink v-if="!isAuthenticated" to="/login">Log in</RouterLink>
+    <!-- <RouterLink v-if="isAuthenticated" @click="handleLogout">Log out</RouterLink> -->
+
+    <button class="log-btn" v-if="isAuthenticated" @click="handleLogout">Log out</button>
   </div>
 </template>
 
@@ -37,5 +39,21 @@ div {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+}
+
+.log-btn {
+    border: none;
+    background-color: #664F35;
+    color: #FFF7ED;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    max-width: 40vw;
+    font-size: 1rem;
+}
+
+.log-btn:hover {
+    outline: 4px solid #664F35;
+    background-color: #FFF7ED;
+    color: #664F35;
 }
 </style> 
