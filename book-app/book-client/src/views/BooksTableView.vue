@@ -29,18 +29,18 @@ onMounted(async () => {
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
-                    <th colspan="3">Genres</th>
                     <th>Published</th>
+                    <th colspan="3">Genres</th>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="book in books" :key="book._id">
                     <td>{{ book.title }}</td>
                     <td>{{ book.author }}</td>
+                    <td>{{ book.published_year }}</td>
                     <td v-for="(genre, index) in book.genres" :key="index">
                         {{ genre }}
                     </td>
-                    <td>{{ book.published_year }}</td>
                 </tr>
             </tbody>
         </table>
