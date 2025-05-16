@@ -1,18 +1,20 @@
 import express from 'express';
-import { 
-  createBook, 
-  deleteBook, 
-  fetchAllBooks, 
-  fetchBook, 
-  updateBook } from '../controllers/booksController.js';
 import { verifyAccessToken } from '../middlewares/verifyAccessToken.js';
-const router = express.Router()
+import {
+  createBook,
+  deleteBook,
+  fetchAllBooks,
+  fetchBook,
+  updateBook,
+} from '../controllers/booksController.js';
 
-router.get('/', fetchAllBooks)
-router.get('/:id', fetchBook)
+const router = express.Router();
 
-router.post('/', verifyAccessToken, createBook)
-router.patch('/:id',verifyAccessToken, updateBook)
-router.delete('/:id',verifyAccessToken, deleteBook)
+router.get('/', fetchAllBooks);
+router.get('/:id', fetchBook);
+
+router.post('/', verifyAccessToken, createBook);
+router.patch('/:id', verifyAccessToken, updateBook);
+router.delete('/:id', verifyAccessToken, deleteBook);
 
 export default router;

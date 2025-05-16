@@ -1,12 +1,14 @@
+// Remove authenticateToken
 import { Router, Request, Response } from 'express';
-import { authenticateToken } from '../middlewares/authMiddleware.js';
+// import { authenticateToken } from '../middlewares/authMiddleware.js';
+import { verifyAccessToken } from '../middlewares/verifyAccessToken.js';
 import {
   getAllReviews,
   getReviewsByBookId,
   createReview,
   getReviewById,
   updateReview,
-  deleteReview
+  deleteReview,
 } from '../controllers/reviewController.js';
 
 const router = Router();
@@ -17,11 +19,17 @@ router.post('/', createReview);
 router.get('/:id', (req, res, next) => {
   Promise.resolve(getReviewById(req, res)).catch(next);
 });
-router.patch('/:id', authenticateToken, (req, res, next) => {
+router.patch('/:id', verifyAccessToken, (req, res, next) => {
   Promise.resolve(updateReview(req, res)).catch(next);
-});//Token
-router.delete('/:id', authenticateToken, (req, res, next) => {
+});
+// router.patch('/:id', authenticateToken, (req, res, next) => {
+//   Promise.resolve(updateReview(req, res)).catch(next);
+// }); // Token
+router.delete('/:id', verifyAccessToken, (req, res, next) => {
   Promise.resolve(deleteReview(req, res)).catch(next);
-});//Token
+});
+// router.delete('/:id', authenticateToken, (req, res, next) => {
+//   Promise.resolve(deleteReview(req, res)).catch(next);
+// }); // Token
 
 export default router;
