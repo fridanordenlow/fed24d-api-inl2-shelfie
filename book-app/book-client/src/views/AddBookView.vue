@@ -9,13 +9,19 @@
     title: '',
     description: '',
     author: '',
-    genres: '',
+    genres: [],
     image: '',
     published_year: '',
   })
   
   const submit = async () => {
     try {
+      // Split the genres input by commas
+      form.genres = form.genres
+        .split(',')
+        .map(genre => genre.trim())
+        .filter(genre => genre.length > 0); // Remove any empty values
+
       await fetch(API_URL + '/books', {
         method: "POST",
         credentials: 'include', // This enables cookie handling
@@ -25,7 +31,7 @@
         body: JSON.stringify(form)
       })
       
-      router.push('/books')
+      router.push('/book-table')
     } catch(error) {
       console.log(error)
     }
@@ -37,6 +43,7 @@
   <SiteHeader title="Shelfie" />
   <div class="wrapper">
     <h2>Add new book</h2>
+    <RouterLink to="/admin-view">Back</RouterLink>
 
     <form id="book-form" class="book-form" @submit.prevent="submit">
       <label>
@@ -52,7 +59,7 @@
             <input type="text" name="title" v-model="form.author"> 
       </label>
       <label>
-            <span>Genres:</span> 
+            <span>Genres (separate by commas):</span> 
             <input type="text" name="title" v-model="form.genres"> 
       </label>
       <label>
@@ -64,19 +71,19 @@
             <input type="text" name="title" v-model="form.published_year"> 
       </label>
       <button>Add book</button> <br />
-      <RouterLink to="/books">Back</RouterLink>
     </form>
   </div>
 </template>
 
 <style>
 .book-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
 .book-form > label > span {
-    display: block;
+  display: block;
 }
 
 </style>

@@ -29,6 +29,8 @@ onMounted(() => {
     <SiteHeader title="Shelfie" />
     <div class="wrapper">
         <h2>All users</h2>
+        <RouterLink to="/admin-view">Back</RouterLink>
+
         <table v-if="users.length">
           <thead>
             <tr>
