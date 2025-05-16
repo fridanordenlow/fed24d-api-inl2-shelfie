@@ -47,21 +47,108 @@ const onSubmit = async () => {
 };
 </script>
 
+
 <template>
     <SiteHeader title="Shelfie" />
     <div class="wrapper">
-        <h2>Log in to your account</h2>
-        <form id="register-form" @submit.prevent="onSubmit">
-            <label for="">Username:</label>
-            <input type="text" name="username" v-model="form.username">
-            <label for="">Password:</label>
-            <input type="text" name="password" v-model="form.password">
-            <button>Log in</button>
-        </form> 
-        <div v-if="authStore.errorMessage" class="feedback-message">{{ authStore.errorMessage }}</div>
-        <RouterLink to="/">Home Page</RouterLink>
+      <h2>Log in to your account</h2>
+      <form class="form" @submit.prevent="onSubmit">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input id="username" type="text" v-model="form.username" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input id="password" type="password" v-model="form.password" />
+        </div>
+        <button class="submit-button" type="submit">Log in</button>
+      </form>
+      <div v-if="authStore.errorMessage" class="feedback-message">
+        {{ authStore.errorMessage }}
+      </div>
+      <RouterLink to="/" class="back-link">← Home Page</RouterLink>
     </div>
 </template>
 
+
 <style scoped>
+.wrapper {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #664F35;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3f51b5;
+}
+
+.feedback-message {
+  margin-top: 1rem;
+  color: red;
+  text-align: center;
+}
+
+.back-link {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: #664F35;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #3f51b5; /* Samma som hover-färgen på knappen */
+  text-decoration-color: #3f51b5;
+  font-weight: 600;
+  background-color: none;
+}
+
+a:hover {
+  background-color: transparent;
+  color: #5c6bc0;
+}
 </style>

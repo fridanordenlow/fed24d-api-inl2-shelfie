@@ -17,7 +17,7 @@ export const registerUser = async (req: Request, res: Response) => {
 
     await newUser.save();
     res.status(201).json({ message: 'New user added', user: newUser });
-    console.log('hashed password:', hashedPassword);
+    // console.log('hashed password:', hashedPassword);
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Unknown error';
     res.status(500).json({ error: message });
