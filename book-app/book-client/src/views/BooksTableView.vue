@@ -23,7 +23,10 @@ onMounted(async () => {
     <SiteHeader title="Shelfie" />
     <div class="wrapper">
         <h2>All books</h2>
-        <RouterLink to="/admin-view">Back</RouterLink>
+        <div class="options">
+            <RouterLink to="/admin-view">Back</RouterLink>
+            <RouterLink to="/add-book">Add new book</RouterLink>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -48,6 +51,11 @@ onMounted(async () => {
 </template>
 
 <style>
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
