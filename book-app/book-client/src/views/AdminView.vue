@@ -17,3 +17,19 @@ import { RouterLink } from "vue-router";
         </div>
     </div>
 </template>
+<style>
+.panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.panel > a {
+    background-color: #664F35;
+    color: #FFF7ED;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 60vw;
+}
+</style>
