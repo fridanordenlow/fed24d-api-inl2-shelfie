@@ -62,13 +62,7 @@ a {
   padding: 0.25rem;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: #664F35;
-    color: #FFF7ED;
-  }
-}
-
-@media (min-width: 1024px) {
-
+a:hover {
+  background-color: #664F35;
+  color: #FFF7ED;
 }
