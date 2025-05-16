@@ -49,15 +49,21 @@ onMounted(async () => {
 
 <style>
 table {
-    margin-top: 1rem;
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
 }
 
 th, td {
-    padding: 5px 10px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f3f3;
 }
 
 tr:nth-child(even) {
