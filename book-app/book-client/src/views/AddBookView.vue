@@ -37,6 +37,7 @@
   <SiteHeader title="Shelfie" />
   <div class="wrapper">
     <h2>Add new book</h2>
+    <RouterLink to="/admin-view">Back</RouterLink>
 
     <form id="book-form" class="book-form" @submit.prevent="submit">
       <label>
@@ -64,19 +65,19 @@
             <input type="text" name="title" v-model="form.published_year"> 
       </label>
       <button>Add book</button> <br />
-      <RouterLink to="/books">Back</RouterLink>
     </form>
   </div>
 </template>
 
 <style>
 .book-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
 .book-form > label > span {
-    display: block;
+  display: block;
 }
 
 </style>

@@ -23,7 +23,7 @@ onMounted(async () => {
     <SiteHeader title="Shelfie" />
     <div class="wrapper">
         <h2>All books</h2>
-        <RouterLink to="/books">Back</RouterLink>
+        <RouterLink to="/admin-view">Back</RouterLink>
         <table>
             <thead>
                 <tr>
@@ -48,6 +48,9 @@ onMounted(async () => {
 </template>
 
 <style>
+table {
+    margin-top: 1rem;
+}
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
