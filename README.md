@@ -1,8 +1,8 @@
 # Gruppuppgift API-utveckling med säker hantering av användare 📚
 
-Shelfie är ett fullstack-gruppprojekt där vi har utvecklat en bokapplikation med fokus på API-utveckling, databasintegration och säker användarhantering.
+Shelfie är ett fullstack-grupprojekt där vi har utvecklat en bokapplikation med fokus på API-utveckling, databasintegration och säker användarhantering.
 
-Applikationen består av en frontend byggd i Vue.js och en backend i Node.js med Express, med MongoDB som databas. Shelfie låter användare bläddra bland böcker, läsa och skriva recensioner samt hantera innehåll via en skyddad adminpanel. Projektet syftar till att tillämpa moderna principer för webbutveckling och säkerhet, inklusive autentisering med JSON Web Tokens och rollbaserad åtkomstkontroll.
+Applikationen består av en frontend byggd i Vue.js och en backend i Node.js med Express.js, med MongoDB som databas. Shelfie låter användare bläddra bland böcker, läsa och skriva recensioner samt hantera innehåll via en skyddad adminpanel. Projektet syftar till att tillämpa moderna principer för webbutveckling och säkerhet, inklusive autentisering med JSON Web Tokens och rollbaserad åtkomstkontroll.
 
 ## Gruppmedlemmar
 
@@ -124,9 +124,9 @@ book-app/
 
 ## Teknologier 🧩
 
-Vue, Vite
-Express, MongoDB, Mongoose
-RESTful API (GET, POST, PATCH, DELETE)
-Middleware för autentisering
-Pinia, Vue Router
-Insomnia för testning
+- Vue, Vite
+- Express, MongoDB, Mongoose
+- RESTful API (GET, POST, PATCH, DELETE)
+- Middleware för autentisering
+- Pinia, Vue Router
+- Insomnia för API-testning
