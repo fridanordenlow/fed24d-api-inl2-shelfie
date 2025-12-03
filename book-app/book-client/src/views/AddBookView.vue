@@ -1,10 +1,9 @@
 <script setup>
   import { reactive } from 'vue';
   import { useRouter } from 'vue-router';
-  import SiteHeader from '@/components/SiteHeader.vue';
 
   const API_URL = import.meta.env.VITE_API_URL;
-  const router = useRouter()
+  const router = useRouter();
   const form = reactive({
     title: '',
     description: '',
@@ -12,63 +11,61 @@
     genres: [],
     image: '',
     published_year: '',
-  })
-  
+  });
+
   const submit = async () => {
     try {
       // Split the genres input by commas
       form.genres = form.genres
         .split(',')
-        .map(genre => genre.trim())
-        .filter(genre => genre.length > 0); // Remove any empty values
+        .map((genre) => genre.trim())
+        .filter((genre) => genre.length > 0); // Remove any empty values
 
       await fetch(API_URL + '/books', {
-        method: "POST",
+        method: 'POST',
         credentials: 'include', // This enables cookie handling
         headers: {
-          "Content-Type": "application/json"
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(form)
-      })
-      
-      router.push('/book-table')
-    } catch(error) {
-      console.log(error)
-    }
-  }
+        body: JSON.stringify(form),
+      });
 
+      router.push('/book-table');
+    } catch (error) {
+      console.log(error);
+    }
+  };
 </script>
 
 <template>
-  <SiteHeader title="Shelfie" />
   <div class="wrapper">
     <h2>Add new book</h2>
     <RouterLink to="/admin-view">Back</RouterLink>
 
     <form id="book-form" class="book-form" @submit.prevent="submit">
       <label>
-            <span>Title:</span>
-            <input type="text" name="title" v-model="form.title"> 
+        <span>Title:</span>
+        <input type="text" name="title" v-model="form.title" />
       </label>
       <label>
-            <span>Description:</span> 
-            <input type="text" name="title" v-model="form.description"> 
+        <span>Description:</span>
+        <input type="text" name="title" v-model="form.description" />
       </label>
       <label>
-            <span>Author:</span> 
-            <input type="text" name="title" v-model="form.author"> 
+        <span>Author:</span>
+        <input type="text" name="title" v-model="form.author" />
       </label>
       <label>
-            <span>Genres (separate by commas):</span> 
-            <input type="text" name="title" v-model="form.genres"> 
+        <span>Genres (separate by commas):</span>
+        <input type="text" name="title" v-model="form.genres" />
       </label>
       <label>
-            <span>Image:</span> 
-            <input type="text" name="title" v-model="form.image"> 
+        <span>Image:</span>
+        <input type="text" name="title" v-model="form.image" />
       </label>
       <label>
-            <span>Published year:</span> 
-            <input type="text" name="title" v-model="form.published_year"> 
+        <span>Published year:</span>
+        <input type="text" name="title" v-model="form.published_year" />
       </label>
       <button>Add book</button> <br />
     </form>
@@ -76,14 +73,13 @@
 </template>
 
 <style>
-.book-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-}
+  .book-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
 
-.book-form > label > span {
-  display: block;
-}
-
+  .book-form > label > span {
+    display: block;
+  }
 </style>

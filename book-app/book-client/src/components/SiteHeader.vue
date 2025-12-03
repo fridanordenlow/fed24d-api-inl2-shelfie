@@ -1,32 +1,42 @@
 <script setup>
-import NavBar from './NavBar.vue';
+  import NavBar from './NavBar.vue';
 
-const props = defineProps({
+  const props = defineProps({
     title: {
-        type: String,
-        required: true
-    }
-})
+      type: String,
+      required: true,
+    },
+  });
 </script>
 
 <template>
-    <header>
-        <h1>{{ title }}</h1>
-        <NavBar />
-    </header>
+  <header>
+    <div>
+      <h1>{{ title }}</h1>
+      <span></span>
+    </div>
+    <NavBar />
+  </header>
 </template>
 
 <style scoped>
-header {
-    background-color: #E3FDE0;
+  header {
+    /* background-color: #e3fde0; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+    padding: 2rem 0;
+  }
 
-h1 {
+  h1 {
     margin: 0;
-}
+    line-height: 1;
+  }
+
+  span {
+    display: block;
+    background-color: #664f35;
+    width: 400px;
+    height: 6px;
+  }
 </style>
