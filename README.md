@@ -80,6 +80,7 @@ book-app/
 │   │   ├── models/
 │   │   ├── router/
 │   │   ├── stores/
+│   │   ├── styles/
 │   │   ├── views/
 │   │   ├── App.vue
 │   │   └── main.js
